@@ -90,7 +90,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
                     <div className="mt-8 pt-6 border-t border-lavender-200 text-center">
                         <div className="flex items-center justify-center gap-2 text-slate-600">
                             <Mail size={18} className="text-lavender-600" />
-                            <a href="mailto:jo7942a@american.edu" className="hover:text-lavender-700 font-medium">jo7942a@american.edu</a>
+                            <a href="mailto:jrorciuoli@gmail.com" className="hover:text-lavender-700 font-medium">jrorciuoli@gmail.com</a>
                         </div>
                     </div>
                 </div>
