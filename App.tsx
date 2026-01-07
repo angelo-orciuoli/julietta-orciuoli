@@ -4,7 +4,7 @@ import Hero from './components/about';
 import WorkSection from './components/work';
 import PhotographySection from './components/photography';
 import ContactSection from './components/contact';
-import Footer from './components/Footer';
+import Footer from './components/footer';
 import Article1 from './components/Article1';
 import Article2 from './components/Article2';
 import Article3 from './components/Article3';

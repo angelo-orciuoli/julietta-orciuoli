@@ -5,14 +5,10 @@ interface PhotographySectionProps {
 }
 
 const photos = [
-    '/visuals/photography/photo1.png',
-    '/visuals/photography/photo2.png',
-    '/visuals/photography/photo3.png',
-    '/visuals/photography/photo4.png',
-    '/visuals/photography/photo5.png',
-    '/visuals/photography/photo7.png',
-    '/visuals/photography/photo8.png',
-    '/visuals/photography/photo9.png',
+    '/visuals/photography/photo1.png', '/visuals/photography/photo2.png',
+    '/visuals/photography/photo3.png', '/visuals/photography/photo4.png',
+    '/visuals/photography/photo5.png', '/visuals/photography/photo7.png',
+    '/visuals/photography/photo8.png', '/visuals/photography/photo9.png',
 ];
 
 const PhotographySection: React.FC<PhotographySectionProps> = ({ id }) => {
@@ -24,41 +20,52 @@ const PhotographySection: React.FC<PhotographySectionProps> = ({ id }) => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="mb-16">
                     <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4 flex items-center gap-3">
-                        Photography
+                        Recent photos
                     </h2>
                     <div className="h-1 w-20 bg-lavender-400 rounded-full"></div>
                 </div>
 
-                {/* Photos Grid - Masonry Style */}
-                <div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-5 auto-rows-[200px]">
-                        {photos.map((photoUrl, idx) => {
-                            // Scatter pattern: some photos span 2 rows, creating visual variety
-                            const spanClasses = [
-                                'md:col-span-2 md:row-span-2', // photo 1 - large
-                                'md:row-span-1',               // photo 2 - normal
-                                'md:row-span-2',               // photo 3 - tall
-                                'md:row-span-1',               // photo 4 - normal
-                                'md:row-span-1',               // photo 5 - normal
-                                'md:row-span-2',               // photo 7 - tall
-                                'md:row-span-1',               // photo 8 - normal
-                                'md:col-span-2 md:row-span-2', // photo 9 - large
-                            ];
-                            return (
-                                <div
-                                    key={idx}
-                                    className={`relative group overflow-hidden rounded-xl shadow-md ${spanClasses[idx] || ''}`}
-                                >
+                {/* Photos Grid - Dramatic Scattered Masonry Layout */}
+                <div className="columns-1 sm:columns-2 lg:columns-3 gap-8">
+                    {photos.map((photoUrl, idx) => {
+                        // Varying aspect ratios to create organic height differences
+                        const aspectClasses = [
+                            'aspect-[3/4]',   // photo 1 - tall portrait
+                            'aspect-[4/3]',   // photo 2 - landscape
+                            'aspect-[3/2]',   // photo 3 - very tall
+                            'aspect-[1/1]',   // photo 4 - square
+                            'aspect-[4/5]',   // photo 5 - portrait
+                            'aspect-[3/2]',   // photo 6 - wide landscape
+                            'aspect-[5/7]',   // photo 7 - tall
+                            'aspect-[16/9]',  // photo 8 - cinematic wide
+                        ];
+                        // Large varied margins for dramatic scatter
+                        const marginClasses = [
+                            'mt-0',
+                            'mt-16',
+                            'mt-4',
+                            'mt-24',
+                            'mt-8',
+                            'mt-20',
+                            'mt-2',
+                            'mt-12',
+                        ];
+                        return (
+                            <div
+                                key={idx}
+                                className={`relative group overflow-hidden rounded-xl shadow-lg break-inside-avoid mb-8 ${marginClasses[idx] || 'mt-0'}`}
+                            >
+                                <div className={`${aspectClasses[idx] || 'aspect-[4/5]'} w-full`}>
                                     <img
                                         src={photoUrl}
                                         alt={`Photo ${idx + 1}`}
-                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                     />
-                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
                                 </div>
-                            );
-                        })}
-                    </div>
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                            </div>
+                        );
+                    })}
                 </div>
 
             </div>
