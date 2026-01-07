@@ -52,7 +52,7 @@ const Article3: React.FC = () => {
                     <br />
 
                     <p>
-                        Currently, there are 50 historic districts in DC and according to the Office of Planning, historic districts serve to protect neighborhoods’ contribution to the city's cultural and aesthetic heritage.
+                        Currently, there are 50 historic districts in DC and according to the <a href="https://planning.dc.gov/page/about-historic-landmarks-and-historic-district-0" target="_blank" rel="noopener noreferrer" className="text-lavender-600 hover:text-lavender-800 underline">Office of Planning</a>, historic districts serve to protect neighborhoods’ contribution to the city's cultural and aesthetic heritage.
                     </p>
 
                     <br />
@@ -70,7 +70,7 @@ const Article3: React.FC = () => {
                     <br />
 
                     <p>
-                        Mary Rowse, a member of the Chevy Chase Conservancy and a former ANC commissioner, gave a presentation at the meeting advocating for the historic district.
+                        Mary Rowse, a member of the <a href="https://chevychaseconservancy.org/" target="_blank" rel="noopener noreferrer" className="text-lavender-600 hover:text-lavender-800 underline">Chevy Chase Conservancy</a> and a former ANC commissioner, gave a presentation at the meeting advocating for the historic district.
                     </p>
 
                     <br />
@@ -106,7 +106,7 @@ const Article3: React.FC = () => {
                     <br />
 
                     <p>
-                        The opposition, Living Chevy Chase, also gave a presentation at the meeting. They pointed out that living in a historic district would be more expensive for residents as doing something as simple as replacing windows would need to go through so much red tape that would rack up the price two-fold.
+                        The opposition, <a href="https://livingchevychase.com" target="_blank" rel="noopener noreferrer" className="text-lavender-600 hover:text-lavender-800 underline">Living Chevy Chase</a>, also gave a presentation at the meeting. They pointed out that living in a historic district would be more expensive for residents as doing something as simple as replacing windows would need to go through so much red tape that would rack up the price two-fold.
                     </p>
 
                     <br />
