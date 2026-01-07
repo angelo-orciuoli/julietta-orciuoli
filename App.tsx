@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/about';
 import WorkSection from './components/work';
-import PersonalSection from './components/PersonalSection';
+import PhotographySection from './components/photography';
 import ContactSection from './components/contact';
 import Footer from './components/Footer';
 import Article1 from './components/Article1';
@@ -41,7 +41,7 @@ const App: React.FC = () => {
     if (currentPage !== 'home') return;
 
     const handleScroll = () => {
-      const sections = ['about', 'work', 'personal', 'contact'];
+      const sections = ['about', 'work', 'photography', 'contact'];
       const scrollPosition = window.scrollY + 100; // Offset
 
       for (const sectionId of sections) {
@@ -81,7 +81,7 @@ const App: React.FC = () => {
       <main className="flex-grow">
         <Hero id="about" />
         <WorkSection id="work" />
-        <PersonalSection id="personal" />
+        <PhotographySection id="photography" />
         <ContactSection id="contact" />
       </main>
 

@@ -11,8 +11,8 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   const navLinks = [
     { name: 'About Me', href: '#about', id: 'about' },
     { name: 'My Work', href: '#work', id: 'work' },
-    { name: 'Photos & Playlists', href: '#personal', id: 'personal' },
-    { name: 'Contact Me', href: '#contact', id: 'contact' },
+    { name: 'Photography', href: '#photography', id: 'photography' },
+    { name: 'Contact', href: '#contact', id: 'contact' },
   ];
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -94,8 +94,8 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                 href={link.href}
                 onClick={(e) => handleClick(e, link.href)}
                 className={`block px-3 py-3 rounded-md text-base font-medium ${activeSection === link.id
-                    ? 'text-lavender-800 bg-lavender-50'
-                    : 'text-slate-600 hover:text-lavender-600 hover:bg-slate-50'
+                  ? 'text-lavender-800 bg-lavender-50'
+                  : 'text-slate-600 hover:text-lavender-600 hover:bg-slate-50'
                   }`}
               >
                 {link.name}
