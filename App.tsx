@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import Hero from './components/about';
 import WorkSection from './components/work';
 import PhotographySection from './components/photography';
 import ContactSection from './components/contact';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import Article1 from './components/Article1';
 import Article2 from './components/Article2';
 import Article3 from './components/Article3';
