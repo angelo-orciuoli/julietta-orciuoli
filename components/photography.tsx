@@ -20,7 +20,7 @@ const PhotographySection: React.FC<PhotographySectionProps> = ({ id }) => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="mb-16">
                     <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4 flex items-center gap-3">
-                        Recent photos
+                        My Recent Captures
                     </h2>
                     <div className="h-1 w-20 bg-lavender-400 rounded-full"></div>
                 </div>
