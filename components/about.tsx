@@ -48,7 +48,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
 
             {/* Main Image */}
             <img
-              src="/visuals/about/jo-prof.png"
+              src={`${import.meta.env.BASE_URL}visuals/about/jo-prof.png`}
               alt="Portrait of Julietta"
               className="relative w-full h-full object-cover rounded-xl shadow-md z-10"
             />

@@ -5,10 +5,10 @@ interface PhotographySectionProps {
 }
 
 const photos = [
-    '/visuals/photography/photo1.png', '/visuals/photography/photo2.png',
-    '/visuals/photography/photo3.png', '/visuals/photography/photo4.png',
-    '/visuals/photography/photo5.png', '/visuals/photography/photo7.png',
-    '/visuals/photography/photo8.png', '/visuals/photography/photo9.png',
+    `${import.meta.env.BASE_URL}visuals/photography/photo1.png`, `${import.meta.env.BASE_URL}visuals/photography/photo2.png`,
+    `${import.meta.env.BASE_URL}visuals/photography/photo3.png`, `${import.meta.env.BASE_URL}visuals/photography/photo4.png`,
+    `${import.meta.env.BASE_URL}visuals/photography/photo5.png`, `${import.meta.env.BASE_URL}visuals/photography/photo7.png`,
+    `${import.meta.env.BASE_URL}visuals/photography/photo8.png`, `${import.meta.env.BASE_URL}visuals/photography/photo9.png`,
 ];
 
 const PhotographySection: React.FC<PhotographySectionProps> = ({ id }) => {

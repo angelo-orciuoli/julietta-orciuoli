@@ -11,25 +11,25 @@ const articles: Article[] = [
     id: '1',
     title: "The Muslim Student Union at American University struggles to find support and funding but still shows up for their community regardless",
     date: 'April 9, 2024',
-    image: "/visuals/work/article1.png"
+    image: `${import.meta.env.BASE_URL}visuals/work/article1.png`
   },
   {
     id: '2',
     title: "American University students have a false sense of safety in DCs second most dangerous ward",
     date: 'March 18, 2024',
-    image: "/visuals/work/article2.png"
+    image: `${import.meta.env.BASE_URL}visuals/work/article2.png`
   },
   {
     id: '3',
     title: "The proposed historic district in Chevy Chase is still being debated and causing tension within the community",
     date: 'February 19, 2024',
-    image: "/visuals/work/article3.png"
+    image: `${import.meta.env.BASE_URL}visuals/work/article3.png`
   },
   {
     id: '4',
     title: "Food Insecurity: The secret epidemic plaguing American University",
     date: 'February 6, 2024',
-    image: "/visuals/work/article4.png"
+    image: `${import.meta.env.BASE_URL}visuals/work/article4.png`
   }
 ];
 
