@@ -26,7 +26,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
 
                 <div className="bg-lavender-50 rounded-3xl p-8 md:p-12 shadow-sm border border-lavender-100">
                     <div className="text-center mb-10">
-                        <h2 className="text-3xl font-serif font-bold text-slate-900">Let's Connect</h2>
+                        <h2 className="text-3xl font-serif font-bold text-slate-900">Let's Connect!</h2>
                     </div>
 
                     {/* Form */}

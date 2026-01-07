@@ -14,9 +14,9 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-slate-900 leading-tight mb-6">
           <span className="text-lavender-600">About Me</span>
         </h1>
-        <div className="prose prose-lg text-slate-600 mb-8 max-w-2xl mx-auto md:mx-0 font-sans leading-relaxed">
+        <div className="prose prose-2xl text-slate-600 mb-8 max-w-2xl mx-auto md:mx-0 font-sans leading-relaxed">
           <p>
-            My name's Julietta Orciuoli and I'm originally from New York City! I am currently pursuing an undergraduate degree in Journalism and Literature at American University. I have a deep love for writing and am able to explore that in a variety of styles across these two majors. As an intersection of both of these passions, I am a blog editor on the schools literary magazine, AmLit. I also hold part-time jobs at a farmers market and soccer field where I explore my non-academic passions. Additionally, in my free time I like reading, biking, and doing crosswords.
+            My name's Julietta Orciuoli and I'm originally from New York City! I am currently pursuing an undergraduate degree in Journalism and Literature at American University. I have a deep love for writing and am able to explore that in a variety of styles across these two majors. As an intersection of both of these passions, I am a blog editor on the schools literary magazine, AmLit. Outside of this work, I love spending time working at a local farmers market and Reeves Field (AU’s soccer facility) and very much enjoy to read, bike, curate playlists, and the occasional crossword puzzle.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
       </div>
 
       {/* Image */}
-      <div className="flex-1 order-1 md:order-2 flex justify-center relative">
+      <div className="flex-1 order-1 md:order-2 flex justify-center md:justify-end relative">
         <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
           {/* Decor squares */}
           <div className="absolute top-0 right-0 -mr-4 -mt-4 w-full h-full border-2 border-lavender-300 rounded-2xl z-0"></div>

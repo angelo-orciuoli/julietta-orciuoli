@@ -35,20 +35,20 @@ const articles: Article[] = [
 
 const WorkSection: React.FC<WorkSectionProps> = ({ id }) => {
   return (
-    <section id={id} className="py-20 bg-white">
+    <section id={id} className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">Selected Work</h2>
           <div className="h-1 w-20 bg-lavender-400 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {articles.map((article) => (
             <article
               key={article.id}
-              className="group flex flex-col md:flex-row bg-slate-50 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-slate-100"
+              className="group flex flex-col bg-slate-50 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-slate-100"
             >
-              <div className="md:w-2/5 h-48 relative overflow-hidden">
+              <div className="h-48 relative overflow-hidden">
                 <img
                   src={article.image}
                   alt={article.title}
@@ -56,7 +56,7 @@ const WorkSection: React.FC<WorkSectionProps> = ({ id }) => {
                 />
               </div>
 
-              <div className="p-6 md:w-3/5 flex flex-col justify-between">
+              <div className="p-6 flex flex-col justify-between flex-1">
                 <div>
                   <div className="text-xs text-slate-400 mb-2 font-sans uppercase tracking-wide">
                     {article.date}

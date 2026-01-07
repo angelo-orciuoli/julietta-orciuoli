@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar';
 import Hero from './components/about';
 import WorkSection from './components/work';
 import PhotographySection from './components/photography';

@@ -9,7 +9,6 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'About Me', href: '#about', id: 'about' },
     { name: 'My Work', href: '#work', id: 'work' },
     { name: 'Photography', href: '#photography', id: 'photography' },
     { name: 'Contact', href: '#contact', id: 'contact' },

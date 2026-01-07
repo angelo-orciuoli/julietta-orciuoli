@@ -17,7 +17,7 @@ const photos = [
 
 const PhotographySection: React.FC<PhotographySectionProps> = ({ id }) => {
     return (
-        <section id={id} className="py-20 bg-slate-50 relative overflow-hidden">
+        <section id={id} className="py-24 bg-slate-50 relative overflow-hidden">
             {/* Background decorative element */}
             <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-lavender-100 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
