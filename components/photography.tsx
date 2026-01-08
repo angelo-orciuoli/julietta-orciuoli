@@ -5,7 +5,7 @@ interface PhotographySectionProps {
 }
 
 const photos = [
-    `${import.meta.env.BASE_URL}visuals/photography/photo1.png`, `${import.meta.env.BASE_URL}visuals/photography/photo2.png`,
+    `${import.meta.env.BASE_URL}visuals/photography/photo11.png`, `${import.meta.env.BASE_URL}visuals/photography/photo2.png`,
     `${import.meta.env.BASE_URL}visuals/photography/photo3.png`, `${import.meta.env.BASE_URL}visuals/photography/photo4.png`,
     `${import.meta.env.BASE_URL}visuals/photography/photo5.png`, `${import.meta.env.BASE_URL}visuals/photography/photo7.png`,
     `${import.meta.env.BASE_URL}visuals/photography/photo8.png`, `${import.meta.env.BASE_URL}visuals/photography/photo9.png`,
