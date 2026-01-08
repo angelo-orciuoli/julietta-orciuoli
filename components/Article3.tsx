@@ -17,7 +17,7 @@ const Article3: React.FC = () => {
                         className="inline-flex items-center text-lavender-600 hover:text-lavender-800 font-medium transition-colors"
                     >
                         <ArrowLeft size={16} className="mr-2" />
-                        Back to all articles
+                        Return Home
                     </a>
                 </div>
             </header>
