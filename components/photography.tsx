@@ -30,7 +30,7 @@ const PhotographySection: React.FC<PhotographySectionProps> = ({ id }) => {
                     {photos.map((photoUrl, idx) => {
                         // Varying aspect ratios to create organic height differences
                         const aspectClasses = [
-                            'aspect-[3/4]',   // photo 1 - tall portrait
+                            'aspect-[16/9]',   // photo 1 - cinematic wide
                             'aspect-[4/3]',   // photo 2 - landscape
                             'aspect-[3/2]',   // photo 3 - very tall
                             'aspect-[1/1]',   // photo 4 - square
