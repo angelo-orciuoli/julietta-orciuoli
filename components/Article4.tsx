@@ -13,7 +13,7 @@ const Article4: React.FC = () => {
             <header className="bg-white/80 backdrop-blur-md border-b border-lavender-200 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto h-20 flex items-center">
                     <a
-                        href="/"
+                        href="https://angelo-orciuoli.github.io/julietta-orciuoli/"
                         className="inline-flex items-center text-lavender-600 hover:text-lavender-800 font-medium transition-colors"
                     >
                         <ArrowLeft size={16} className="mr-2" />
