@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Mail, Send } from 'lucide-react';
+import { Mail, Send, Loader2 } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 interface ContactSectionProps {
     id: string;
@@ -10,14 +11,32 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+    const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        alert("Thanks for your message! This is a demo form.");
-        setName('');
-        setEmail('');
-        setPhone('');
-        setMessage('');
+        setIsLoading(true);
+        setStatus('idle');
+
+        try {
+            await emailjs.send(
+                'service_fqmzadc',
+                'template_3hurp1p',
+                { name, email, phone, message },
+                'DDZ_lCj6S7l5XwVNt'
+            );
+            setStatus('success');
+            setName('');
+            setEmail('');
+            setPhone('');
+            setMessage('');
+        } catch (error) {
+            console.error('EmailJS error:', error);
+            setStatus('error');
+        } finally {
+            setIsLoading(false);
+        }
     }
 
     return (
@@ -80,10 +99,26 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
                         </div>
                         <button
                             type="submit"
-                            className="w-full py-3 px-6 bg-slate-900 hover:bg-lavender-600 text-white font-medium rounded-lg transition-colors flex items-center justify-center gap-2"
+                            disabled={isLoading}
+                            className="w-full py-3 px-6 bg-slate-900 hover:bg-lavender-600 text-white font-medium rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            Send Message <Send size={16} />
+                            {isLoading ? (
+                                <>Sending... <Loader2 size={16} className="animate-spin" /></>
+                            ) : (
+                                <>Send Message <Send size={16} /></>
+                            )}
                         </button>
+
+                        {status === 'success' && (
+                            <div className="p-3 bg-green-50 border border-green-200 text-green-700 rounded-lg text-center">
+                                Thank you for your message! I'll get back to you soon.
+                            </div>
+                        )}
+                        {status === 'error' && (
+                            <div className="p-3 bg-red-50 border border-red-200 text-red-700 rounded-lg text-center">
+                                Something went wrong. Please email me directly.
+                            </div>
+                        )}
                     </form>
 
                     {/* Email */}
