@@ -18,9 +18,9 @@ const PhotographySection: React.FC<PhotographySectionProps> = ({ id }) => {
             <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-lavender-100 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="mb-16">
+                <div className="mb-8">
                     <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4 flex items-center gap-3">
-                        My Recent Captures
+                        Collage of Recents
                     </h2>
                     <div className="h-1 w-20 bg-lavender-400 rounded-full"></div>
                 </div>

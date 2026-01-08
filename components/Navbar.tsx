@@ -47,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                 <Linkedin size={18} />
               </a>
               <a
-                href="mailto:jo7942a@american.edu"
+                href="mailto:jrorciuoli@gmail.com"
                 onClick={(e) => e.stopPropagation()}
                 className="text-slate-400 hover:text-lavender-600 transition-colors"
               >
