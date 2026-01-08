@@ -5,10 +5,10 @@ import WorkSection from './components/work';
 import PhotographySection from './components/photography';
 import ContactSection from './components/contact';
 import Footer from './components/Footer';
-import Article1 from './components/Article1';
-import Article2 from './components/Article2';
-import Article3 from './components/Article3';
-import Article4 from './components/Article4';
+import Article1 from './components/articles/Article1';
+import Article2 from './components/articles/Article2';
+import Article3 from './components/articles/Article3';
+import Article4 from './components/articles/Article4';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('about');

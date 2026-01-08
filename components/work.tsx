@@ -37,14 +37,14 @@ const mediaStories = [
   {
     id: '5',
     type: 'video',
-    title: "Muslim Students’ Ramadan Experience at AU",
+    title: "[PUBLISHING SOON] Muslim Students’ Ramadan Experience at AU",
     date: 'April 16, 2024',
     icon: Video
   },
   {
     id: '6',
     type: 'audio',
-    title: "Audio story on a campus couple: An AU meet-cute",
+    title: "[PUBLISHING SOON] Audio story on a campus couple: An AU meet-cute",
     date: 'May 1, 2024',
     icon: Headphones
   }
