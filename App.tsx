@@ -20,10 +20,10 @@ const App: React.FC = () => {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash;
-      if (hash === '#article-1') {
-        setCurrentPage('article-1');
-      } else if (hash === '#article-2') {
-        setCurrentPage('article-2');
+      if (hash === '#article-5') {
+        setCurrentPage('article-5');
+      } else if (hash === '#article-6') {
+        setCurrentPage('article-6');
       } else if (hash === '#article-3') {
         setCurrentPage('article-3');
       } else if (hash === '#article-4') {
