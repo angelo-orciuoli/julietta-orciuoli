@@ -9,6 +9,8 @@ import Article1 from './components/articles/Article1';
 import Article2 from './components/articles/Article2';
 import Article3 from './components/articles/Article3';
 import Article4 from './components/articles/Article4';
+import Article5 from './components/articles/Article5';
+import Article6 from './components/articles/Article6';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('about');
