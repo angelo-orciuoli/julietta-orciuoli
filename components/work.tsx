@@ -8,15 +8,15 @@ interface WorkSectionProps {
 
 const articles: Article[] = [
   {
-    id: '1',
-    title: "The Muslim Student Union at American University struggles to find support and funding but still shows up for their community regardless",
-    date: 'April 9, 2024',
+    id: '5',
+    title: "How Nazish Qureshi believes that Climate activism is God's plan for her",
+    date: 'October 29, 2024',
     image: `${import.meta.env.BASE_URL}visuals/work/article1.png`
   },
   {
-    id: '2',
-    title: "American University students have a false sense of safety in DCs second most dangerous ward",
-    date: 'March 18, 2024',
+    id: '6',
+    title: "Climate Organizers plan for a Future Trump Administration",
+    date: 'December 10, 2024',
     image: `${import.meta.env.BASE_URL}visuals/work/article2.png`
   },
   {
