@@ -63,10 +63,10 @@ const App: React.FC = () => {
 
   // Render article pages
   if (currentPage === 'article-1') {
-    return <Article1 />;
+    return <Article5 />;
   }
   if (currentPage === 'article-2') {
-    return <Article2 />;
+    return <Article6 />;
   }
   if (currentPage === 'article-3') {
     return <Article3 />;
